@@ -40,12 +40,11 @@ int main(){
 	int test;
 	cin>>test;
 	while(test--){
-		long long int l, n,k=1;
-		long long int sum = 0;
+		string n;
+		long long int k=1,l,sum = 0;
 		cin>>l>>n;
-		for(int i=0;i<l;i++){
-			sum = sum + (n%10)*k;
-			n=n/10;
+		for(int i=l-1;i>=0;i--){
+			sum += (n[i]-48)*k;
 			k=k*2;
 		}
 		cout<<sum<<endl;
