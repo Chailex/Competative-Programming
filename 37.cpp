@@ -8,6 +8,7 @@ int combinationUtil(int arr[], int data[],
 int printCombination(int arr[], int n, int r, int res)
 {
     int data[r];
+    cout<<data[r]<<endl;
     return combinationUtil(arr, data, 0, n-1, 0, r, res);
 }
 
@@ -49,10 +50,10 @@ int main(){
 			cin>>arr[i];
 		}
 		int ct=-1;
-		for(int i=2;i<=n;i++){
+		for(int i=1;i<=n;i++){
 			ct = printCombination(arr, n, i, res);
 			if(ct>-1){
-				cout<<ct<<endl;
+				// cout<<ct<<endl;
 				break;
 			}
 		}
