@@ -77,18 +77,22 @@ int main(){
 			for (long long int i = 0; i <= high+1; ++i)
 			{
 				if(even>odd){
-					--even;
-					++odd;
-					++ct;
+					// --even;
+					// ++odd;
+					// ++ct;
+					cout<<even-n<<endl;
+					break;
 				}else{
-					--odd;
-					++even;
-					++ct;
-				}
-				if(even==odd){
-					cout<<ct<<endl;
+					// --odd;
+					// ++even;
+					// ++ct;
+					cout<<odd-n<<endl;
 					break;
 				}
+				// if(even==odd){
+				// 	cout<<ct<<endl;
+				// 	break;
+				// }
 			}
 		} 
 		
