@@ -1,4 +1,4 @@
-// Graph - Program for reaching from source to destination node-
+// Graph - Program for reaching from source to destination node- DFS Solution
 
 const hashpath = (graph, src, dst)=>{
     if(src===dst) return true;
